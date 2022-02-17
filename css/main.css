@@ -1,0 +1,172 @@
+/*
+ *  Raul Antonio Ortega Vallejo 
+ *  Diseno de Materiales I. P.Web. 
+ *  Profesor: Gilberto Leon Martagon
+ *
+*/
+
+                 
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/css/fuentes/FiraCode-Light.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, 
+                 U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, 
+                 U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html{ 
+	scroll-behavior: smooth;
+}
+
+body {
+      background-color: #090808;
+      margin:auto;
+      padding:0;
+      font-family: 'Fira Code', monospace;
+      font-size: 16px;
+      color: #FDF9CE;
+}
+
+.pg-portafolio{
+      animation: pg-portafolio 120s linear infinite;
+      background-image: url("/imgs/edificios.jpg");
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+}
+
+@keyframes pg-portafolio{
+   100% {background-position:-3000px;}
+}
+
+ 
+a,a:active,a:visited{
+	color:#feac13;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#feac13;
+}
+
+nav#menu {
+  	/* background-color: rgba(10,20,30,0.1); */
+	position: absolute;
+	width: 350px;
+	height:500px;
+        left: 1.8em;
+        font-size:16px;
+}
+
+nav#menu a:hover{
+	font-size:24px;
+}
+
+
+nav#menu a:hover,.active,strong,h1,h2{
+	color: #00FF41;
+}
+
+nav#menu ul{
+	list-style:none;
+        padding:0;
+}
+
+nav#menu .lista-contacto{
+        position:absolute;
+	bottom:0;
+        width: 350px;
+}
+
+.active, code{
+	font-size:27px;
+}
+
+
+div#arte{
+	position:absolute;
+	margin:auto;
+	left:400px;
+	padding:50px;
+}
+
+div .fb-like{
+	left:0;
+	margin:0;
+	padding:0;
+	width: 200px;
+	height:auto;
+	position: relative;
+}
+
+
+div .lista-simple  {
+	list-style:none;
+	padding:0;
+} 
+
+
+div .lista-simple li {
+	padding-bottom:10px;
+}
+
+figure {
+	margin:0;
+	padding:0;
+}
+
+p {
+	padding-bottom: 6px;
+}
+
+/* Adaptable a 600px max */
+
+@media (max-width: 600px) {
+        body {background-color: #161616; }
+        div#arte {position:absolute; left:0; top: 150px; width:auto; padding:50px 20px 100px 20px;}
+        nav#menu {width:100%;left:0; padding:0;}
+        nav#menu .lista-contacto {position:fixed; height:80px;
+                                  background-color: #262626;
+                                  font-size:0.8em; 
+                                  margin: 0; width: 100%; 
+                                  padding: 1em; 
+                                  opacity: 0.9;
+                                  z-index:1; 
+                             }
+}
+
+/* Siguiendo recomendaciones de Mozilla Dev. */
+.termux {
+  -webkit-animation: 1s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 1s linear infinite condemned_blink_effect;
+  color: #8bf367;
+}
+
+/* for Safari 4.0 - 8.0 */
+@-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
